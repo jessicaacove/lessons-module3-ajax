@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX Examples</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ajax Examples</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <br>
+
+        <a href="post.html">Characters</a>
+        <br>
+
+      </nav>
+    </header>
+
+    <button id="postWalle"> Post WALL-E </button>
+
+    <!-- this <ul> starts empty and will be filled by JS -->
+    <ul id="characterList"></ul>
+
+    <h3> Create a Character </h3>
+
+    <form id="postCharacterForm">
+      <label for="postCharacterName">Name</label>
+      <input id="postCharacterName" type="text" placeholder="John Johnson">
+      <br>
+
+      <label for="postCharacterWeapon">Weapon</label>
+      <input id="postCharacterWeapon" type="text" placeholder="awkwardly bad jokes">
+      <br>
+
+      <label for="postCharacterOccupation">Occupation</label>
+      <input id="postCharacterOccupation" type="text" placeholder="actuary">
+      <br>
+
+      <button> Save New Character </button>
+    </form>
+
+    <h3> Update a Character </h3>
+
+    <form id="updateForm">
+      <label for="updateCharacterId">Character ID</label>
+      <input id="updateCharacterId" type="number" placeholder="999">
+      <br>
+
+      <label for="updateName">Name</label>
+      <input id="updateName" type="text" placeholder="John Johnson">
+      <br>
+
+      <label for="updateWeapon">Weapon</label>
+      <input id="updateWeapon" type="text" placeholder="awkwardly bad jokes">
+      <br>
+
+      <label for="updateOccupation">Occupation</label>
+      <input id="updateOccupation" type="text" placeholder="actuary">
+      <br>
+
+      <button> Update This Character </button>
+    </form>
+
+    <footer>
+      <p>Made with 😳 at Ironhack</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+      <script src='./js/post.js'></script>
+    </body>
+  </html>
